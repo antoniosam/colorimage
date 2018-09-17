@@ -32,12 +32,12 @@ class ColorImage
         $colorSum = 0;
         $min_pixel = 255;
         $max_pixel = 0;
-        for ($x = 0; $x < $size_x; $x++) {
-            for ($y = 0; $y < $size_y; $y++) {
+        for ($y = 0; $y < $size_y; $y++) {
+            for ($x = 0; $x < $size_x; $x++) {
                 $rgb = imagecolorat($resource, $x, $y);
                 $pixel = $rgb & 0xFF;
                 $colorSum  += $pixel;
-                $colorListMap[$x] = $pixel;
+                $colorListMap[$y][] = $pixel;
                 if(isset($colorList[$pixel])){
                     $colorPercentage[$pixel] = 0;
                 }

@@ -75,7 +75,7 @@ class InfoColorImage
     /**
      * @return array
      */
-    public function getMapPixels()
+    public function getPixels()
     {
         return $this->colorListMap;
     }
