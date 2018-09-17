@@ -29,7 +29,7 @@ class InfoColorImage
 
     function __toString()
     {
-        return 'MinPixel: '.$this->min_pixel.', MaxPixel: '.$this->max_pixel.', Avg: '.$this->avg.', Dominated: '.$this->dominatecolor.'.';
+        return 'MinPixel: '.$this->min_pixel.', MaxPixel: '.$this->max_pixel.', AvgPixel: '.$this->avg.', Dominated: '.$this->dominatecolor.'.';
     }
 
     /**
@@ -51,7 +51,7 @@ class InfoColorImage
     /**
      * @return string
      */
-    public function getAvg()
+    public function getAvgPixel()
     {
         return $this->avg;
     }
