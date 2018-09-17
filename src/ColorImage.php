@@ -38,7 +38,7 @@ class ColorImage
                 $pixel = $rgb & 0xFF;
                 $colorSum  += $pixel;
                 $colorListMap[$y][] = $pixel;
-                if(isset($colorList[$pixel])){
+                if(!isset($colorPercentage[$pixel])){
                     $colorPercentage[$pixel] = 0;
                 }
                 $colorPercentage[$pixel] += $unidad;
